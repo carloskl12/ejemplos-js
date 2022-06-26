@@ -1,0 +1,7 @@
+Nro, Valor
+0, algo
+1,todo
+2,"texto que incluye el separador ,"
+3, "otra forma, dos"
+4,"nada mal"
+5,"última línea"

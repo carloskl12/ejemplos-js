@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejemplos js </title>
+<link rel="stylesheet" href="estilos.css">
+<meta name="viewport" content="initial-scale=1.0">
+<meta name="description" content="Ejemplos de funcionalidades implementadas con javascript">
+</head>
+<body>
+    <h1 class="normal-title-color">Ejemplos javascript</h1>
+<div class="normal">
+    <h2 >Procesar y guardar un archivo csv</h2>
+    <p>En este ejemplo se presenta una forma en la que se puede cargar un archivo csv, procesar la 
+        información que contiene, y finalmente, guardar los resultados.</p>
+    <div class="horizontal-csv-buttons"> 
+    <div class="normal-process-file">
+        <div class="file-button"> Seleccionar archivo <input type="file" id="csv-file"  name="csv-file"> </div>
+        <select id="sep-col" name="sep-col">
+            <option value="" disabled selected="selected">Separador columnas</option>
+            <option value=",">Coma (,)</option>
+            <option value="&#9">Tabulador</option>
+            <option value="|">Barra vertical (|)</option>
+        </select>
+        <button id="process-csv">Procesar</button>
+    </div>
+    </div>
+    <div id="csv-output">
+        No hay datos cargados
+    </div>
+    <div class="horizontal-csv-buttons">
+    <div class="normal-process-file">
+        <select id="sep-col-save" name="sep-col-save">
+            <option value="" disabled selected="selected">Separador columnas</option>
+            <option value=",">Coma (,)</option>
+            <option value="&#9">Tabulador</option>
+            <option value="|">Barra vertical (|)</option>
+        </select>
+        <button id="csv-copy-bt">Copiar al portapeles</button>
+        <button id="export-bt">Exportar</button>
+    </div>
+    </div>
+    <p>Es importante anotar que en sentido estricto el formato csv corresponde a datos 
+        separados por coma, pero en las hojas de cálculo que no siguen el estándar pueden 
+        utilizar otro tipo de separadores.
+    </p>
+    <script src="src/csv-process.js"></script>
+</div>
+
+<footer class="normal-title-color">
+<a href="https://github.com/carloskl12">carloskl12 -- github</a> 
+</footer>
+</body>
+</html>
